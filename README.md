@@ -106,12 +106,6 @@ http://localhost/wondersofberau/
 http://localhost/wondersofberau/admin/
 ```
 
-**Default Admin Credentials:**
-- Username: `berauadmin`
-- Password: `admin123`
-
-⚠️ **Penting:** Ganti password default setelah login pertama kali
-
 ## Project Structure
 
 ```
@@ -252,13 +246,6 @@ post_max_size = 10M
 ## Team & Contact
 
 Untuk pertanyaan mengenai project ini, silakan hubungi melalui GitHub repository atau buat issue.
-
-## Acknowledgments
-
-Terima kasih kepada:
-- Kabupaten Berau untuk data dan informasi pariwisata
-- DeepL untuk API translation service
-- Open source community untuk references dan inspirasi
 
 ---
 
