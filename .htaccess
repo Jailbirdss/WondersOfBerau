@@ -1,0 +1,26 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /wondersofberau/
+DirectoryIndex public/index.php
+
+# Redirect direct hits to /public back to this project base (avoid XAMPP root)
+RewriteRule ^public/?$ /wondersofberau/ [L,R=302]
+
+# Serve admin (supports /admin/* and /app/admin/* under this project path)
+RewriteRule ^app/admin/?$ public/admin/index.php [L,NC]
+RewriteRule ^app/admin/(.*)$ public/admin/$1 [L,NC]
+RewriteRule ^admin/?$ public/admin/index.php [L,NC]
+RewriteRule ^admin/(.*)$ public/admin/$1 [L,NC]
+
+# Serve API
+RewriteRule ^api/?$ public/api/ [L,NC]
+RewriteRule ^api/(.*)$ public/api/$1 [L,NC]
+
+# Expose assets from public
+RewriteRule ^assets/(.*)$ public/assets/$1 [L,NC]
+
+# Send top-level PHP/html requests to public/ (handles destinasi.php, etc.)
+RewriteCond %{REQUEST_URI} !^/wondersofberau/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ public/$1 [L,NC]

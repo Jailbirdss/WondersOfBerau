@@ -1,0 +1,230 @@
+
+.about-page .eyebrow {
+    color: #4d6bb8;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+    text-shadow: 0 1px 6px rgba(77, 107, 184, 0.15);
+}
+
+.about-page .about-hero-kicker {
+    color: #e5edff;
+}
+
+
+.about-page .about-cta {
+    background: radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.12), transparent 32%),
+                linear-gradient(135deg, #6d8fe3 0%, #5b7ad1 45%, #4a68c2 100%);
+    color: #f8fbff;
+    padding: 3rem 0;
+}
+
+.about-page .about-cta .eyebrow {
+    color: #e8f0ff;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.16);
+}
+
+.about-page .benefit-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #e8f0ff;
+    border: 1px solid #c8d8ff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 14px rgba(74, 108, 181, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.about-page .benefit-icon svg {
+    width: 16px;
+    height: 16px;
+    color: #4a6cb5;
+    transition: transform 0.25s ease;
+}
+
+.about-page .about-mini-pills span {
+    transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, color 0.22s ease;
+}
+
+.about-page .about-mini-pills span:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(95, 159, 238, 0.2);
+    background: #f3f7ff;
+    color: #1f2a44;
+}
+
+
+.about-page .about-gallery {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.about-page .about-section-header {
+    text-align: center;
+    margin: 0 auto 2.1rem;
+}
+
+.about-page .about-section-header .section-title-left {
+    margin-bottom: 0.35rem;
+    color: #1f2a44;
+}
+
+.about-page .about-section-header .section-subtitle {
+    margin: 0.35rem auto 0;
+    color: #5a657a;
+    max-width: 720px;
+}
+
+.about-page .about-gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.1rem;
+}
+
+.about-page .gallery-card {
+    border-radius: 16px;
+    min-height: 220px;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.14);
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-color: #2d3444;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    flex: 1 1 calc(33.333% - 1.1rem);
+    max-width: 360px;
+    min-width: 240px;
+}
+
+.about-page .gallery-card::after {
+    background: linear-gradient(180deg, rgba(5, 12, 24, 0.08), rgba(5, 12, 24, 0.48));
+}
+
+.about-page .gallery-card span {
+    font-size: 1.05rem;
+    letter-spacing: 0.4px;
+}
+
+.about-page .gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 46px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 960px) {
+    .about-page .gallery-card {
+        flex: 1 1 calc(50% - 1.1rem);
+    }
+}
+
+@media (max-width: 620px) {
+    .about-page .gallery-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.about-page .about-benefits li {
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.about-page .about-benefits li:hover {
+    transform: translateX(4px);
+    color: #2c3e50;
+}
+
+.about-page .about-benefits li:hover .benefit-icon {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(74, 108, 181, 0.24);
+    background: #f0f5ff;
+    border-color: #aec0f5;
+}
+
+.about-page .about-benefits li:hover .benefit-icon svg {
+    transform: translateY(-1px);
+}
+
+.about-page .about-cta-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 1040px;
+}
+
+.about-page .about-cta h2 {
+    margin: 0.2rem 0 0.4rem;
+    font-size: 2rem;
+    color: #fdfefe;
+}
+
+.about-page .about-cta-desc {
+    margin: 0;
+    color: rgba(245, 249, 255, 0.9);
+}
+
+.about-page .about-cta-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+}
+
+.about-page .about-cta-actions .btn-primary {
+    background: linear-gradient(135deg, #f7fbff 0%, #dbe8ff 100%);
+    color: #1f2a44;
+    box-shadow: 0 12px 28px rgba(22, 41, 92, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.about-page .about-cta-actions .btn-primary:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #dce9ff 100%);
+    color: #0f1b35;
+    box-shadow: 0 16px 34px rgba(22, 41, 92, 0.24);
+}
+
+.about-page .about-cta-contact {
+    margin: 0;
+    font-size: 0.95rem;
+    color: rgba(245, 249, 255, 0.92);
+}
+
+.about-page .contact-chip {
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #f8fbff;
+}
+
+.about-page .contact-chip:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.about-page .about-cta-contact a {
+    color: inherit;
+}
+
+.about-page .about-cta-contact a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .about-page .about-cta {
+        padding: 2.5rem 0;
+    }
+
+    .about-page .about-cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .about-page .about-cta-actions {
+        width: 100%;
+        text-align: left;
+        align-items: flex-start;
+    }
+}
